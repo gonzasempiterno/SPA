@@ -1,0 +1,125 @@
+$BkgColor: #20232a;
+$FntColor1: #61dafb;
+$FntColor2: white;
+$FntSrc: "Bebas Neue";
+$FntHeight: 25px;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bkgImg{
+    width: 100vw;
+    height: 47vw;
+}
+
+.miniText {
+    > label{
+        font-family: $FntSrc;
+        font-size: 42px;
+        color: $BkgColor;
+        z-index: 1;
+        position: absolute;
+        top: 5vw;
+        left: 2vw;
+        text-decoration: underline;
+    }
+    > input{
+        z-index: 1;
+        position: absolute;
+        top: 5vw;
+        right: 3vw;
+        background-color: transparent;
+        color: $FntColor2;
+        font-family: $FntSrc;
+        font-size: 42px;
+        display: flex;
+        border: 5px solid;
+        border-color: $BkgColor;
+    }
+    > input:hover{
+        background-color: $FntColor2;
+        border-color: $FntColor2;
+        color: $BkgColor;
+        cursor: pointer;
+    }
+}
+
+.midText{
+    z-index: 1;
+    position: absolute;
+    top: 13vw;
+    left: 23vw;
+    text-align: center;
+    font-family: $FntSrc;
+    font-size: 60px;
+    color: $FntColor2;
+}
+
+.contactBtns {
+    > a {
+        &:nth-child(1){
+            position: absolute;
+            top: 37vw;
+            left: 37vw;
+            border-color: $BkgColor;
+            > input {
+                z-index: 1;
+                position: absolute;
+                background-color: transparent;
+                color: $FntColor2;
+                font-family: $FntSrc;
+                font-size: 42px;
+                display: flex;
+                border: 5px solid;
+                border-color: $BkgColor;
+            }
+
+        }
+        &:nth-child(1):hover{
+            > input {
+                background-color: $FntColor2;
+                border-color: $FntColor2;
+                color: $BkgColor;
+                cursor: pointer;
+            }
+        }
+        &:nth-child(2){
+            position: absolute;
+            top: 37vw;
+            left: 50vw;
+            border-color: $BkgColor;
+            > input {
+                z-index: 1;
+                background-color: transparent;
+                color: $FntColor2;
+                font-family: $FntSrc;
+                font-size: 42px;
+                display: flex;
+                border: 5px solid;
+                border-color: $BkgColor;                
+            }
+        }
+        &:nth-child(2):hover{
+            > input {
+                background-color: $FntColor2;
+                border-color: $FntColor2;
+                color: $BkgColor;
+                cursor: pointer;
+            }
+        }
+    }
+    > a:link {
+        text-decoration: none;
+    }
+    > a{
+        z-index: 1;
+        position: absolute;
+        top: 43vw;
+        left: 45vw;
+    }
+    > a:hover {
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$BkgColor: #20232a;
+$FntColor1: #61dafb;
+$FntColor2: white;
+$FntSrc: "Bebas Neue";
+$FntHeight: 25px;
+
+.NavigationBar{
+    background-color: $BkgColor;
+    color: $FntColor2;
+    font-family: $FntSrc;
+    height: 3vw;
+    > label {  
+        &:nth-child(1){
+            position: relative;
+            top: 0.5vw;
+            left: 1vw;
+            margin-bottom: 1vw;
+            font-size: 30px;
+        }
+        &:nth-child(2){
+            position: relative;
+            top: 0.5vw;
+            left: 77vw;
+            margin-bottom: 2vw;
+            font-size: 30px;
+        }
+        &:nth-child(2):hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.NavigationBar img img{
+    height: 5vw;
+}
+
+.graphLogo{
+    position: relative;
+    margin-left: 1vw;
+    margin-top: 0.5vw;
+    width: 5vw;
+    
+}
